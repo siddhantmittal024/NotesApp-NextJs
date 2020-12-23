@@ -8,7 +8,6 @@ const handler = nc()
   .post((req, res) => {
     const id = Date.now()
     const note = {...req.body, id}
-
     notes.push(note)
     res.json({data: note})
   })
